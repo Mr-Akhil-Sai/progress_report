@@ -1,15 +1,12 @@
 let submitButton = document.querySelector("#submit");
-let graphDiv = document.querySelector("#graphDiv");
+let canvas = document.querySelector("canvas");
 
-submitButton.addEventListener("click", ()=>{
-	graphDivStyles();
-
+submitButton.addEventListener("click", () => {
+  canvasStyles();
 });
 
-function graphDivStyles(){
-	graphDiv.style.display = "block";
-	graphDiv.style.width = "45vw";
-	graphDiv.style.border = "1px solid red";
+function canvasStyles() {
+  canvas.style.display = "block";
+  canvas.style.border = "1px solid red";
+  canvas.style.width = "45vw";
 }
-
-
