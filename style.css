@@ -5,9 +5,11 @@
 }
 main{
 	display: flex;
+	margin:1em auto;
+	width: 90vw;
 }
 #inputsDiv{
-	width: 50vw;
+	width: 45vw;
 }
 #name{
 	margin-top: 1em;
