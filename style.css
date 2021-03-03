@@ -1,0 +1,39 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+main{
+	display: flex;
+}
+#inputsDiv{
+	width: 50vw;
+}
+#name{
+	margin-top: 1em;
+	margin-left: 3em;
+}
+#maths{
+	margin-top:1em;
+	margin-left: 2.8em;
+}
+#physics{
+	margin-top:1em;
+	margin-left: 2.3em;
+}
+#chemistry{
+	margin-top:1em;
+	margin-left: .8em;
+}
+#french{
+	margin-top:1em;
+	margin-left: 2.6em;
+}
+#english{
+	margin-top:1em;
+	margin-left: 2.5em;
+}
+#submit{
+	margin-top:1em;
+	margin-left: 3em;
+}
