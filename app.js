@@ -1,6 +1,8 @@
 let submitButton = document.querySelector("#submit");
 let canvas = document.querySelector("canvas");
 let ctx = canvas.getContext("2d");
+let marks = document.querySelector("#marks");
+let subjects = document.querySelector("#subjects");
 
 submitButton.addEventListener("click", () => {
   canvasStyles();
@@ -15,9 +17,10 @@ submitButton.addEventListener("click", () => {
 });
 
 function canvasStyles() {
-  canvas.style.display = "block";
-  canvas.style.border = "1px solid black";
+  canvas.style.display = "block"; 
   canvas.style.width = "50vw";
+  marks.style.display = "flex";
+  subjects.style.display = "flex";
 }
 
 function xAxis(){
@@ -36,7 +39,7 @@ function yAxis(){
 
 function mathsMarks(){
 	let maths = document.querySelector("#maths").value;
-	ctx.fillRect(15,135, 20, -maths);
+	ctx.fillRect(40,135, 20, -maths);
 }
 
 function physicsMarks(){

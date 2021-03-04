@@ -39,6 +39,9 @@
   margin-top: 1em;
   margin-left: 3em;
 }
+#marks{
+	display: none;
+}
 #one{
 	position: absolute;
 	top: 43.7%;
@@ -86,6 +89,34 @@
 }
 #ten{
 	position: absolute;
-	top: 13.5%;
+	top: 13%;
 	left: 45%;
+}
+#subjects{
+	display: none;
+}
+#mathsSub{
+	position:absolute;
+	left: 51.5%;
+	top:50%;
+}
+#physicsSub{
+	position:absolute;
+	left: 58%;
+	top:50%;
+}
+#chemistrySub{
+	position: absolute;
+	left: 64%;
+	top: 50%;
+}
+#frenchSub{
+	position: absolute;
+	left: 71.5%;
+	top: 50%;
+}
+#englishSub{
+	position: absolute;
+	left: 78%;
+	top: 50%;
 }
