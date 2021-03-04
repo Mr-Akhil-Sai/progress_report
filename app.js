@@ -13,6 +13,7 @@ submitButton.addEventListener("click", () => {
 	chemistryMarks();
 	frenchMarks();
 	englishMarks();
+	displayingName();
 	clearInputs();
 });
 
@@ -60,6 +61,17 @@ function frenchMarks(){
 function englishMarks(){
 	let english = document.querySelector("#english").value;
 	ctx.fillRect(200, 135, 20, -english);
+}
+
+function displayingName(){
+	let main = document.querySelector("main");
+	let name = document.querySelector("#name");
+	let nameDiv = document.createElement("div");
+	nameDiv.innerText = name.value;
+	nameDiv.style.position = "absolute";
+	nameDiv.style.left = "62%";
+	nameDiv.style.top = "10%";
+	main.appendChild(nameDiv);
 }
 
 function clearInputs(){
