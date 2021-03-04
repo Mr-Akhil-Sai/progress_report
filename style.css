@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-main {
+#main {
   display: flex;
   margin: 1em auto;
   width: 90vw;
@@ -38,4 +38,54 @@ main {
 #submit {
   margin-top: 1em;
   margin-left: 3em;
+}
+#one{
+	position: absolute;
+	top: 43.7%;
+	left:45.5%;
+}
+#two{
+	position: absolute;
+	top:40.5%;
+	left:45.5%;
+}
+#three{
+	position: absolute;
+	top: 37%;
+	left: 45.5%;
+}
+#four{
+	position: absolute;
+	top:33.7%;
+	left: 45.5%;
+}
+#five{
+	position: absolute;
+	top:30.5%;
+	left: 45.5%;
+}
+#six{
+	position: absolute;
+	top: 27%;
+	left: 45.5%;
+}
+#seven{
+	position: absolute;
+	top: 23.5%;
+	left: 45.5%;
+}
+#eight{
+	position: absolute;
+	top: 20%;
+	left:45.5%;
+}
+#nine{
+	position: absolute;
+	top: 17%;
+	left: 45.5%;
+}
+#ten{
+	position: absolute;
+	top: 13.5%;
+	left: 45%;
 }

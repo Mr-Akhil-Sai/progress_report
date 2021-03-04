@@ -36,7 +36,7 @@ function yAxis(){
 
 function mathsMarks(){
 	let maths = document.querySelector("#maths").value;
-	ctx.fillRect(40,135, 20, -maths);
+	ctx.fillRect(15,135, 20, -maths);
 }
 
 function physicsMarks(){
@@ -58,3 +58,20 @@ function englishMarks(){
 	let english = document.querySelector("#english").value;
 	ctx.fillRect(200, 135, 20, -english);
 }
+
+function clearInputs(){
+	let name = document.querySelector("#name");
+	let maths = document.querySelector("#maths");
+	let physics = document.querySelector("#physics");
+	let chemistry = document.querySelector("#chemistry");
+	let french = document.querySelector("#french");
+	let english = document.querySelector("#english");
+
+	name.value = "";
+	maths.value = "";
+	physics.value = "";
+	chemistry.value = "";
+	french.value = "";
+	english.value = "";
+}
+
