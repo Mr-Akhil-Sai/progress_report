@@ -1,8 +1,11 @@
 let submitButton = document.querySelector("#submit");
+let clearButton = document.querySelector("#clear");
 let canvas = document.querySelector("canvas");
 let ctx = canvas.getContext("2d");
 let marks = document.querySelector("#marks");
 let subjects = document.querySelector("#subjects");
+let nameDiv = document.createElement("div");
+
 
 submitButton.addEventListener("click", () => {
   canvasStyles();
@@ -17,6 +20,14 @@ submitButton.addEventListener("click", () => {
 	clearInputs();
 });
 
+clearButton.addEventListener("click", () => {
+	clearInputs();
+	canvas.style.display = "none";
+	marks.style.display = "none";
+	subjects.style.display = "none";
+	nameDiv.style.display = "none";
+});
+
 function canvasStyles() {
   canvas.style.display = "block"; 
   canvas.style.width = "50vw";
@@ -28,6 +39,7 @@ function xAxis(){
 	ctx.beginPath();
 	ctx.moveTo(15, 15);
 	ctx.lineTo(15, 135);
+	ctx.strokeStyle = "#000000";
 	ctx.stroke();
 }
 
@@ -66,7 +78,6 @@ function englishMarks(){
 function displayingName(){
 	let main = document.querySelector("main");
 	let name = document.querySelector("#name");
-	let nameDiv = document.createElement("div");
 	nameDiv.innerText = name.value;
 	nameDiv.style.position = "absolute";
 	nameDiv.style.left = "62%";
