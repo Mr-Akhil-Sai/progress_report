@@ -39,84 +39,84 @@
   margin-top: 1em;
   margin-left: 3em;
 }
-#marks{
-	display: none;
+#marks {
+  display: none;
 }
-#one{
-	position: absolute;
-	top: 43.7%;
-	left:45.5%;
+#one {
+  position: absolute;
+  top: 43.7%;
+  left: 45.5%;
 }
-#two{
-	position: absolute;
-	top:40.5%;
-	left:45.5%;
+#two {
+  position: absolute;
+  top: 40.5%;
+  left: 45.5%;
 }
-#three{
-	position: absolute;
-	top: 37%;
-	left: 45.5%;
+#three {
+  position: absolute;
+  top: 37%;
+  left: 45.5%;
 }
-#four{
-	position: absolute;
-	top:33.7%;
-	left: 45.5%;
+#four {
+  position: absolute;
+  top: 33.7%;
+  left: 45.5%;
 }
-#five{
-	position: absolute;
-	top:30.5%;
-	left: 45.5%;
+#five {
+  position: absolute;
+  top: 30.5%;
+  left: 45.5%;
 }
-#six{
-	position: absolute;
-	top: 27%;
-	left: 45.5%;
+#six {
+  position: absolute;
+  top: 27%;
+  left: 45.5%;
 }
-#seven{
-	position: absolute;
-	top: 23.5%;
-	left: 45.5%;
+#seven {
+  position: absolute;
+  top: 23.5%;
+  left: 45.5%;
 }
-#eight{
-	position: absolute;
-	top: 20%;
-	left:45.5%;
+#eight {
+  position: absolute;
+  top: 20%;
+  left: 45.5%;
 }
-#nine{
-	position: absolute;
-	top: 17%;
-	left: 45.5%;
+#nine {
+  position: absolute;
+  top: 17%;
+  left: 45.5%;
 }
-#ten{
-	position: absolute;
-	top: 13%;
-	left: 44.7%;
+#ten {
+  position: absolute;
+  top: 13%;
+  left: 44.7%;
 }
-#subjects{
-	display: none;
+#subjects {
+  display: none;
 }
-#mathsSub{
-	position:absolute;
-	left: 51.5%;
-	top:50%;
+#mathsSub {
+  position: absolute;
+  left: 51.5%;
+  top: 50%;
 }
-#physicsSub{
-	position:absolute;
-	left: 58%;
-	top:50%;
+#physicsSub {
+  position: absolute;
+  left: 58%;
+  top: 50%;
 }
-#chemistrySub{
-	position: absolute;
-	left: 64%;
-	top: 50%;
+#chemistrySub {
+  position: absolute;
+  left: 64%;
+  top: 50%;
 }
-#frenchSub{
-	position: absolute;
-	left: 71.5%;
-	top: 50%;
+#frenchSub {
+  position: absolute;
+  left: 71.5%;
+  top: 50%;
 }
-#englishSub{
-	position: absolute;
-	left: 78%;
-	top: 50%;
+#englishSub {
+  position: absolute;
+  left: 78%;
+  top: 50%;
 }
