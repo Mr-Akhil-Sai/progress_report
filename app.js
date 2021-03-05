@@ -51,10 +51,11 @@ function yAxis() {
 function marksDisplayingOnGraph(){
 	let marksArray = [];
 	marksArray.push(mathsMarks.value, physicsMarks.value, chemistryMarks.value, frenchMarks.value, englishMarks.value);
+	let j = 0;
 	for(let i = 0; i <= marksArray.length; i++){
-		for(let j = 40; j <=200; j += 40){
-			ctx.fillRect(j, 135, 20, -marksArray[i]);
-		}
+		j += 40;
+		console.log(j);
+		ctx.fillRect(j, 135, 20, -marksArray[i]);
 }
 }
 
