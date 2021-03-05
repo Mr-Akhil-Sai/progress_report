@@ -17,7 +17,7 @@ submitButton.addEventListener("click", () => {
 		canvasStyles();
 		xAxis();
 		yAxis();
-		marksDisplayingOnGraph();
+		displayingMarksOnGraph();
 		displayingName();
 		clearInputs();	
 });
@@ -50,14 +50,15 @@ function yAxis() {
   ctx.stroke();
 }
 
-function marksDisplayingOnGraph(){
+function displayingMarksOnGraph(){
 	let marksArray = [];
 	let rectangleWidth = 20;
 	marksArray.push(mathsMarks.value, physicsMarks.value, chemistryMarks.value, frenchMarks.value, englishMarks.value);
 	let j = 0;
-	for(let i = 0; i <= marksArray.length; i++){
+	for(let i = 0; i < marksArray.length; i++){
 		j += 40;	
-		ctx.fillRect(j, yAxisCoordinate, rectangleWidth, -marksArray[i]);
+		ctx.fillRect(j, yAxisCoordinate, rectangleWidth, -marksArray[i]);	
+		displayingMarks(marksArray, i, j);
 }
 }
 
@@ -79,4 +80,20 @@ function clearInputs() {
   chemistryMarks.value = "";
   frenchMarks.value = "";
   englishMarks.value = "";
+}
+
+function displayingMarks(marksArray,i, j){
+	let marksDiv = document.createElement("div");
+	let graphDiv = document.querySelector("#graphDiv");
+	marksDiv.innerText = marksArray[i];	
+	marksDivStyles(marksDiv, marksArray, graphDiv, i, j);
+	graphDiv.append(marksDiv);	
+}
+
+function marksDivStyles(marksDiv, marksArray, graphDiv, i, j){
+	graphDiv.style.position = "relative"
+	marksDiv.style.position = "absolute";	
+	marksDiv.style.left = j * 2.35;
+	marksDiv.style.bottom =  marksArray[i] * 2.2;
+	console.log(j);	
 }
