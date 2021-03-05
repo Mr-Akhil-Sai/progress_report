@@ -10,6 +10,8 @@ let physicsMarks = document.querySelector("#physics");
 let chemistryMarks = document.querySelector("#chemistry");
 let frenchMarks = document.querySelector("#french");
 let englishMarks = document.querySelector("#english");
+let startingPoint = 15;
+let yAxisCoordinate = 135; 
 
 submitButton.addEventListener("click", () => {
 		canvasStyles();
@@ -34,28 +36,28 @@ function canvasStyles() {
 
 function xAxis() {
   ctx.beginPath();
-  ctx.moveTo(15, 15);
-  ctx.lineTo(15, 135);
+  ctx.moveTo(startingPoint, startingPoint);
+  ctx.lineTo(startingPoint, yAxisCoordinate);
   ctx.strokeStyle = "black";
   ctx.stroke();
 }
 
 function yAxis() {
   ctx.beginPath();
-  ctx.moveTo(15, 135);
-  ctx.lineTo(240, 135);
+  ctx.moveTo(startingPoint, yAxisCoordinate);
+  ctx.lineTo(240, yAxisCoordinate);
   ctx.strokeStyle = "black";
   ctx.stroke();
 }
 
 function marksDisplayingOnGraph(){
 	let marksArray = [];
+	let rectangleWidth = 20;
 	marksArray.push(mathsMarks.value, physicsMarks.value, chemistryMarks.value, frenchMarks.value, englishMarks.value);
 	let j = 0;
 	for(let i = 0; i <= marksArray.length; i++){
-		j += 40;
-		console.log(j);
-		ctx.fillRect(j, 135, 20, -marksArray[i]);
+		j += 40;	
+		ctx.fillRect(j, yAxisCoordinate, rectangleWidth, -marksArray[i]);
 }
 }
 
