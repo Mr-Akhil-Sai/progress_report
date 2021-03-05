@@ -59,7 +59,7 @@ function displayingMarksOnGraph(){
 		j += 40;	
 		ctx.fillRect(j, yAxisCoordinate, rectangleWidth, -marksArray[i]);	
 		displayingMarks(marksArray, i, j);
-}
+		}
 }
 
 function displayingName() {
@@ -94,6 +94,5 @@ function marksDivStyles(marksDiv, marksArray, graphDiv, i, j){
 	graphDiv.style.position = "relative"
 	marksDiv.style.position = "absolute";	
 	marksDiv.style.left = j * 2.35;
-	marksDiv.style.bottom =  marksArray[i] * 2.2;
-	console.log(j);	
+	marksDiv.style.bottom =  marksArray[i] * 2.24;;	
 }
